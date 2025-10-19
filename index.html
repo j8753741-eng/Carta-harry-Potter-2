@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta Mágica 💌</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Great+Vibes&display=swap');
+
+    body {
+      background: radial-gradient(circle at center, #2a1b3d 0%, #000000 100%);
+      background-image: url('https://i.imgur.com/4fFJ7wD.png'); /* textura de pergamino */
+      background-size: cover;
+      color: #f5deb3;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+      padding: 50px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.7em;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 20px;
+      display: inline-block;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    }
+
+    /* Efecto de estrellas flotantes */
+    .sparkle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #ffd700;
+      border-radius: 50%;
+      animation: twinkle 3s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; transform: scale(0.5); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Carta Mágica para Mi Amor 💫</h1>
+  <p>
+    Querida persona especial,<br><br>
+
+    Nos conocimos el año pasado, en un momento en que el destino parecía escribir historias distintas para cada uno.  
+    No fue amor a primera vista, ni un hechizo inmediato de esos que hacen perder el sentido.  
+    Fue algo más lento, más real, como una poción que necesita tiempo para tomar fuerza. 🪄<br><br>
+
+    Al inicio de este año, cuando tu historia anterior llegó a su final, empezamos a hablar más…  
+    y sin darnos cuenta, nuestra amistad empezó a brillar con una luz distinta. ✨  
+    Cada conversación, cada risa, cada mirada fue construyendo algo que ni la magia más poderosa podría explicar.<br><br>
+
+    Y ahora, hace solo unas semanas, todo comenzó a cambiar.  
+    Nuestro vínculo tomó un nuevo rumbo, como si el universo —o quizá Dumbledore mismo—  
+    nos guiara hacia algo más profundo. 💞  
+    No fue un hechizo repentino, sino una conexión que nació de la sinceridad,  
+    la confianza y el cariño verdadero. 🌙<br><br>
+
+    No sé qué nos espera más adelante, pero sé que quiero seguir descubriéndolo contigo,  
+    paso a paso, con la misma magia que nos trajo hasta aquí. 💫<br><br>
+
+    Con todo mi cariño,<br>
+    ✨ Tu mago favorito 🪄
+  </p>
+
+  <!-- Generar estrellitas mágicas -->
+  <script>
+    for(let i=0; i<30; i++) {
+      const star = document.createElement('div');
+      star.className = 'sparkle';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = (Math.random() * 3) + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+</body>
+</html>
